@@ -52,7 +52,7 @@ Automation testing End-to-End untuk [YouTube](https://www.youtube.com/): buka me
 │   │       └── text.check.js           # self-check normalisasi (node)
 │   ├── reports/                        # HTML report (hasil run)
 │   └── videos/                         # video Cypress (hasil run)
-├── docs/run-output.log                 # log terminal run terakhir
+├── docs/                               # bukti pengujian (log terminal run terakhir, screenshot)
 ├── .env / .env.example
 ├── cypress.config.js
 ├── package.json
@@ -94,11 +94,35 @@ Run 16 Oct 2026, Cypress 16.2.0, Firefox 158 headless, Node 24.18.0, Windows 11.
 
 | Item | Hasil |
 |---|---|
-| Status | **1 test, 1 passed, 0 failed** (15 detik) |
+| Status | **1 test, 1 passed, 0 failed** (±16 detik) |
 | Video #3 | "1000 Players Simulate End Prison in Minecraft" — channel **Parrot** (`/watch?v=9-j9GWjyWpY`) |
 | Log terminal | [docs/run-output.log](docs/run-output.log) |
 
 Video trending berubah setiap saat, jadi video #3 bisa berbeda di run berikutnya.
+
+### Bukti Pengujian
+
+Screenshot di bawah diambil dari HTML report dan video Cypress hasil run di atas.
+
+**HTML report: 1 passed, 0 failed**
+
+![HTML report](docs/html-report.png)
+
+**1. Homepage YouTube**
+
+![Homepage](docs/01-homepage.png)
+
+**2. Halaman Gaming dengan section Trending videos dan tombol View all**
+
+![Gaming](docs/02-gaming.png)
+
+**3. Halaman Trending videos: title dan channel video #3 dicatat**
+
+![Trending](docs/03-trending.png)
+
+**4. Halaman watch: title "1000 Players Simulate End Prison in Minecraft" dan channel Parrot sesuai**
+
+![Watch video](docs/04-watch-video.png)
 
 ## 9. Known Issues & Troubleshooting
 
