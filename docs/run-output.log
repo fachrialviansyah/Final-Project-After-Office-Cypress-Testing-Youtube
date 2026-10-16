@@ -1,0 +1,77 @@
+
+> youtube-e2e@1.0.0 cy:run
+> cypress run --browser firefox --spec cypress/e2e/youtube-gaming.cy.js
+
+
+◇ injected env (1) from .env
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        16.2.0                                                                         │
+  │ Browser:        Firefox 158 (headless)                                                         │
+  │ Node Version:   v24.18.0 (C:\Program Files\nodejs\node.exe)                                    │
+  │ Specs:          1 found (youtube-gaming.cy.js)                                                 │
+  │ Searched:       C:\AfterOffice\Final Project\3. Youtube\cypress\e2e\youtube-gaming.cy.js       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+Remove output folder C:\AfterOffice\Final Project\3. Youtube\cypress\reports
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  youtube-gaming.cy.js                                                            (1 of 1)
+
+
+  YouTube Gaming trending
+    √ opens trending gaming video #3 and matches its title and channel (12249ms)
+
+
+  1 passing (15s)
+
+[mochawesome] Report JSON saved to C:\AfterOffice\Final Project\3. Youtube\cypress\reports\.jsons\mochawesome.json
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     15 seconds                                                                       │
+  │ Spec Ran:     youtube-gaming.cy.js                                                             │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Video)
+
+  -  Video output: C:\AfterOffice\Final Project\3. Youtube\cypress\videos\youtube-gaming.cy.js.mp4
+
+Start generate report process
+Read and merge jsons from "C:\AfterOffice\Final Project\3. Youtube\cypress\reports\.jsons"
+Copy media folder from "C:\AfterOffice\Final Project\3. Youtube\cypress\videos" to "C:\AfterOffice\Final Project\3. Youtube\cypress\reports\videos"
+Enhance report
+Create HTML report
+HTML report successfully created!
+C:\AfterOffice\Final Project\3. Youtube\cypress\reports\index.html
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✔  youtube-gaming.cy.js                     00:15        1        1        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✔  All specs passed!                        00:15        1        1        -        -        -  
+
+  errno: 1,
+  code: 'EPERM',
+  path: '\\\\?\\C:\\Users\\User\\AppData\\Roaming\\Cypress\\cy\\production\\browsers\\firefox-stable\\run-18496',
+  syscall: 'rm'

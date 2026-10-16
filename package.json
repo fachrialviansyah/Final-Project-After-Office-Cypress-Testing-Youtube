@@ -1,0 +1,18 @@
+{
+  "name": "youtube-e2e",
+  "version": "1.0.0",
+  "description": "E2E test: YouTube Gaming trending video #3",
+  "scripts": {
+    "test": "cypress run --browser firefox --spec cypress/e2e/youtube-gaming.cy.js",
+    "cy:run": "cypress run --browser firefox --spec cypress/e2e/youtube-gaming.cy.js",
+    "cy:open": "cypress open",
+    "test:text": "node cypress/support/utils/text.check.js"
+  },
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "cypress": "^16.2.0",
+    "cypress-mochawesome-reporter": "^5.0.0",
+    "dotenv": "^18.0.8"
+  }
+}
